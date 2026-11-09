@@ -1,0 +1,345 @@
+id,tarefa,titulo,objetivo,prompt,campos,alerta,recurso_triwi_tipo,recurso_triwi_nome,recurso_triwi_url,fonte_oficial,pagina,atualizado_em
+KW-01,Pesquisa de palavras-chave,Prompt para expandir um tema em palavras-chave por intenção de busca,"Transformar um tema, produto ou serviço numa lista inicial de buscas reais, agrupadas por intenção, para depois validar o volume numa ferramenta de palavras-chave.","Você é um especialista em SEO no Brasil. Vou trabalhar o tema [TEMA] para a empresa [EMPRESA], que vende [OFERTA] para [PÚBLICO] em [LOCAL].
+
+Liste as buscas que esse público faz no Google, em português do Brasil, do jeito que as pessoas digitam, incluindo abreviações, erros comuns e perguntas completas.
+
+Agrupe as buscas em quatro intenções:
+1. Informacional: a pessoa quer aprender ou entender.
+2. Comparativa: está avaliando opções.
+3. Transacional: quer comprar ou contratar.
+4. Navegacional: procura uma marca ou um site específico.
+
+Entregue uma tabela com as colunas: busca; intenção; etapa da jornada; tipo de página que responde melhor (artigo, página de produto, página de categoria, comparativo, ferramenta).
+
+Regras:
+1. Não invente volume de busca, dificuldade nem custo por clique. Você não tem esses dados.
+2. Não repita a mesma busca com variação mínima de plural ou de ordem das palavras.
+3. Marque com (validar) toda busca que você não tem segurança de que o público usa.
+4. No fim, liste as dez buscas de cauda longa com mais chance de trazer cliente e explique cada escolha em uma frase.","[TEMA]: o assunto, produto ou serviço que vai ser trabalhado; [EMPRESA]: nome da empresa ou da marca; [OFERTA]: o que a empresa vende, em uma frase; [PÚBLICO]: quem compra, com cargo, perfil ou momento de vida; [LOCAL]: país, estado ou cidade em que a empresa atende","A IA não tem acesso a volume de busca e costuma inventar números quando alguém pede. Ela também sugere buscas que ninguém faz, escritas como um redator escreveria e não como o público digita. Valide cada busca no Planejador de palavras-chave do Google Ads ou na ferramenta que você usa, e só depois priorize.",Guia,Guia de Palavras-chave e Intenção de Busca,https://triwi.com.br/guias/palavras-chave/,n/d,prompts-para-pesquisa-de-palavras-chave.md,2026-11-09
+KW-02,Pesquisa de palavras-chave,Prompt para agrupar palavras-chave em clusters e páginas,"Organizar uma lista exportada de uma ferramenta, já com volume, em grupos que viram páginas, e apontar onde duas páginas do site disputam a mesma busca.","Abaixo está uma lista de palavras-chave exportada de [FERRAMENTA], com o volume mensal no Brasil. O site é [SITE] e estas são as páginas que já existem:
+[PÁGINAS DO SITE]
+
+Lista de palavras-chave:
+[LISTA DE PALAVRAS]
+
+Tarefa:
+1. Agrupe as palavras em clusters. Um cluster reúne buscas que uma única página consegue responder bem, porque têm a mesma intenção e pedem o mesmo tipo de resultado.
+2. Para cada cluster, informe: nome do cluster; palavra principal (a de maior volume com a intenção certa); palavras secundárias; intenção; soma do volume informado na lista; página existente que deve responder ou ""página nova"".
+3. Aponte os casos em que duas páginas existentes disputam o mesmo cluster (canibalização) e diga qual delas deveria ficar com ele.
+4. Liste as palavras que ficaram fora de qualquer cluster e explique por quê.
+
+Regras:
+1. Use apenas os volumes da lista. Não estime os que faltam.
+2. Quando não tiver segurança sobre a intenção de uma busca, diga que é preciso olhar a página de resultados do Google antes de decidir.
+3. No fim, informe quantas palavras recebeu e quantas distribuiu, para eu conferir que nenhuma se perdeu.","[FERRAMENTA]: a ferramenta de onde saiu a lista, como Google Ads, Semrush ou Ahrefs; [SITE]: o domínio do site; [PÁGINAS DO SITE]: URL e título das páginas que já existem sobre o tema; [LISTA DE PALAVRAS]: a lista exportada, com uma palavra e o volume por linha","Agrupar por semelhança de palavra é o erro mais comum da IA: duas buscas parecidas podem pedir páginas diferentes, e duas buscas diferentes podem caber na mesma página. A prova está no Google mostrar resultados parecidos para as duas. Confira a página de resultados dos clusters mais importantes antes de criar ou fundir páginas. Listas longas também podem ser cortadas sem aviso: mande em blocos e confira se o total devolvido bate com o enviado.",Ferramenta,Organizador de palavras-chave em massa,https://triwi.com.br/ferramentas/organizador-de-palavras-chave-em-massa/,n/d,prompts-para-pesquisa-de-palavras-chave.md,2026-11-09
+KW-03,Pesquisa de palavras-chave,Prompt para descobrir as perguntas que o público faz antes de comprar,"Levantar dúvidas, objeções e comparações do público a partir de material real de atendimento e vendas, para virar pauta, FAQ e página.","Sou da empresa [EMPRESA], que vende [OFERTA] para [PÚBLICO]. Abaixo estão trechos reais de conversas com clientes (atendimento, vendas, avaliações e comentários):
+[MATERIAL DOS CLIENTES]
+
+Com base nesse material e no que você sabe sobre o mercado de [SETOR] no Brasil:
+1. Liste as perguntas que essas pessoas fariam ao Google ou a uma IA antes de comprar, escritas como elas perguntariam.
+2. Separe as perguntas em cinco grupos: dúvidas sobre o problema; dúvidas sobre a solução; comparações entre opções; objeções (valor, prazo, risco, confiança); dúvidas depois da compra.
+3. Marque com (do material) as perguntas que saíram do material que colei e com (hipótese) as que você deduziu.
+4. Indique, para cada grupo, que tipo de conteúdo responde melhor.
+
+Não cite números de mercado nem estatísticas. Se precisar de um dado para responder, escreva ""dado a confirmar"".","[EMPRESA]: nome da empresa ou da marca; [OFERTA]: o que a empresa vende, em uma frase; [PÚBLICO]: quem compra; [MATERIAL DOS CLIENTES]: trechos reais de atendimento, vendas, avaliações e comentários, sem dados pessoais; [SETOR]: o mercado em que a empresa atua","Sem material real, a IA devolve as perguntas genéricas que valem para qualquer empresa do setor, e todo concorrente que usar o mesmo prompt chega à mesma lista. O valor deste prompt está no material que você cola. Trate as perguntas marcadas como hipótese como pauta a validar, não como demanda comprovada.",Skill,Skill: planejar conteúdos para 90 dias,https://triwi.com.br/skills/planejar-conteudos-para-90-dias/,n/d,prompts-para-pesquisa-de-palavras-chave.md,2026-11-09
+BR-01,Briefing de conteúdo,Prompt para montar o briefing de um conteúdo novo,"Entregar ao redator um briefing com intenção, recorte, estrutura comentada, evidências a coletar e critérios de aceite, antes de qualquer linha de texto.","Monte o briefing de um conteúdo para SEO que um redator vai escrever.
+
+Contexto:
+- Empresa: [EMPRESA], que vende [OFERTA]
+- Público: [PÚBLICO]
+- Palavra-chave principal: [PALAVRA PRINCIPAL]
+- Palavras secundárias: [PALAVRAS SECUNDÁRIAS]
+- Objetivo de negócio da página: [OBJETIVO]
+- Páginas do site que este conteúdo deve linkar: [LINKS INTERNOS]
+
+O briefing deve ter:
+1. Intenção de busca em uma frase: o que a pessoa quer resolver ao digitar a palavra principal.
+2. Recorte: o que o conteúdo cobre, o que fica de fora e qual outra página cuida do que ficou de fora.
+3. Resposta direta: o que os dois primeiros parágrafos precisam responder, sem introdução.
+4. Estrutura comentada: títulos H2 e H3 em formato de pergunta real, com uma linha sobre o que cada seção precisa dizer.
+5. Evidências a coletar: dados, exemplos, fontes oficiais e experiência própria da empresa que o texto precisa trazer.
+6. Chamada para ação coerente com a intenção de quem chega.
+7. Critérios de aceite: a lista do que o editor confere antes de aprovar.
+
+Não escreva o texto. Não invente dados nem fontes: onde for preciso um dado, diga o que buscar e onde.","[EMPRESA]: nome da empresa ou da marca; [OFERTA]: o que a empresa vende; [PÚBLICO]: quem vai ler; [PALAVRA PRINCIPAL]: a busca que a página quer ganhar; [PALAVRAS SECUNDÁRIAS]: variações e buscas relacionadas, separadas por vírgula; [OBJETIVO]: o que a página precisa gerar, como contato, venda ou cadastro; [LINKS INTERNOS]: URLs do site que o texto deve citar","A IA tende a propor a mesma estrutura de qualquer artigo (o que é, benefícios, dicas, conclusão), que não responde a intenção nem diferencia a página. Ela também sugere fontes e estudos que não existem. Compare a estrutura com os primeiros resultados do Google para a palavra principal e confira toda fonte sugerida antes de passar o briefing ao redator.",Skill,Skill: criar um briefing de conteúdo para SEO,https://triwi.com.br/skills/criar-briefing-de-conteudo-para-seo/,n/d,prompts-para-briefing-de-conteudo-seo.md,2026-11-09
+BR-02,Briefing de conteúdo,Prompt para o briefing de atualização de um conteúdo que perdeu posição,"Decidir o que manter, atualizar, acrescentar e cortar num conteúdo que caiu no Google, separando o que os dados mostram do que é hipótese.","O conteúdo publicado em [URL] perdeu posições para a busca [PALAVRA PRINCIPAL]. Estes são os dados do Search Console dos últimos meses (consulta, cliques, impressões, CTR e posição média, mês a mês):
+[DADOS DO SEARCH CONSOLE]
+
+Texto atual da página:
+[TEXTO ATUAL]
+
+Monte um briefing de atualização com:
+1. Diagnóstico provável, separando o que os dados mostram do que é hipótese (queda de cliques com posição estável, queda de posição, mudança de intenção, conteúdo desatualizado).
+2. O que manter: trechos que respondem bem e não devem ser reescritos.
+3. O que atualizar: informações com data, exemplos e números que precisam ser revistos, com a fonte a consultar.
+4. O que acrescentar: perguntas que a busca pede e o texto não responde.
+5. O que cortar: trechos que fogem da intenção.
+6. Data da página: recomende mudar a data visível só se o conteúdo mudar de fato.
+
+Não reescreva o texto. Não afirme a causa da queda sem apoio nos dados que colei.","[URL]: endereço da página que caiu; [PALAVRA PRINCIPAL]: a busca em que ela perdeu posição; [DADOS DO SEARCH CONSOLE]: exportação do relatório de desempenho filtrado pela página, com alguns meses de histórico; [TEXTO ATUAL]: o texto publicado hoje","A IA costuma atribuir qualquer queda a uma atualização do algoritmo ou a falta de palavra-chave, sem olhar os dados. Queda de cliques com posição estável, por exemplo, pode vir de um AI Overview que passou a aparecer na página de resultados, e não do texto. O Google orienta a não mudar a data de um conteúdo sem mudança real, então desconfie de recomendação que mexa só na data.",Ferramenta,Inventário e revisão de conteúdo,https://triwi.com.br/ferramentas/inventario-e-revisao-de-conteudo/,https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br,prompts-para-briefing-de-conteudo-seo.md,2026-11-09
+BR-03,Briefing de conteúdo,Prompt para o briefing de uma página de produto ou serviço,"Planejar uma página comercial na ordem em que o comprador decide, usando só diferenciais e provas que a empresa consegue sustentar.","Monte o briefing de uma página comercial do tipo [TIPO DE PÁGINA] para [OFERTA], da empresa [EMPRESA].
+
+Contexto:
+- Palavra-chave principal: [PALAVRA PRINCIPAL]
+- Público e momento de compra: [PÚBLICO]
+- Diferenciais comprovados (só o que a empresa consegue provar): [DIFERENCIAIS]
+- Objeções que vendas mais ouve: [OBJEÇÕES]
+- Restrições legais ou de marca: [RESTRIÇÕES]
+
+O briefing deve definir:
+1. A frase de abertura, que responde em uma linha o que é a oferta e para quem.
+2. Os blocos da página na ordem de decisão do comprador: o que é, para quem serve, como funciona, provas, objeções e próximos passos.
+3. A prova que entra em cada bloco (caso, número, certificação, depoimento real), só a partir do que listei.
+4. As perguntas frequentes que a página precisa responder.
+5. A chamada para ação principal e a secundária.
+6. O que a página não pode prometer, com base nas restrições.
+
+Não crie diferenciais, números, certificações ou depoimentos que não estejam no contexto.","[TIPO DE PÁGINA]: produto, serviço, categoria ou página de solução; [OFERTA]: o produto ou serviço da página; [EMPRESA]: nome da empresa ou da marca; [PALAVRA PRINCIPAL]: a busca que a página quer ganhar; [PÚBLICO]: quem compra e em que momento chega à página; [DIFERENCIAIS]: o que a empresa tem de diferente e consegue provar; [OBJEÇÕES]: o que faz o cliente hesitar; [RESTRIÇÕES]: regras do setor, do jurídico ou da marca","Em página comercial, a IA preenche lacunas com promessas: prazo de entrega, garantia, líder de mercado, número de clientes. Tudo soa plausível e pode ser falso ou proibido pelas regras do setor. Confira cada afirmação do briefing contra o que a empresa consegue provar e contra as normas do conselho profissional ou do órgão regulador do setor.",Guia,Guia de Conteúdo para SEO e IA,https://triwi.com.br/guias/conteudo/,n/d,prompts-para-briefing-de-conteudo-seo.md,2026-11-09
+AU-01,Auditoria de página,Prompt para auditoria de SEO on-page a partir do HTML,"Revisar os elementos de SEO de uma página (title, headings, links, imagens, marcações) com status, achado e correção recomendada, em ordem de peso.","Faça uma auditoria de SEO on-page da página abaixo. A busca que ela quer ganhar é [PALAVRA PRINCIPAL] e o público é [PÚBLICO].
+
+Código HTML da página:
+[HTML]
+
+Avalie os itens abaixo, um por linha, com status (ok, ajustar ou crítico), o que encontrou e a correção recomendada:
+1. Elemento title e meta description.
+2. H1 e hierarquia de headings.
+3. Resposta à intenção de busca nos primeiros parágrafos.
+4. Links internos: quantidade, texto âncora e destino.
+5. Imagens: atributo alt, dimensões declaradas e formato.
+6. Dados estruturados presentes e erros visíveis no JSON-LD.
+7. Canonical, meta robots e hreflang, se houver.
+8. Sinais de autoria e de data: quem escreveu e quando a página foi atualizada.
+
+Regras:
+1. Avalie só o que está no HTML que colei. Se algo não aparece no código, escreva ""não encontrado no HTML"" em vez de supor.
+2. Não avalie velocidade nem Core Web Vitals: isso exige medição real.
+3. Ordene as correções da que mais pesa para a que menos pesa.","[PALAVRA PRINCIPAL]: a busca que a página quer ganhar; [PÚBLICO]: quem é o leitor da página; [HTML]: o código da página, de preferência o HTML renderizado que aparece na Inspeção de URL do Search Console","A IA não abre a página como o robô do Google: ela lê o texto que você colou. Se o site monta o conteúdo com JavaScript, o código-fonte pode vir quase vazio e a IA vai apontar falhas que não existem na página renderizada. Ela também opina sobre velocidade sem medir. Para o HTML renderizado, use a Inspeção de URL do Search Console; para performance, o PageSpeed Insights.",Ferramenta,Analisador de SEO de HTML colado,https://triwi.com.br/ferramentas/analisador-de-seo-de-html/,https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics?hl=pt-br,prompts-para-auditoria-de-pagina-seo.md,2026-11-09
+AU-02,Auditoria de página,Prompt para avaliar a qualidade e o E-E-A-T de um conteúdo,"Encontrar o que falta para um texto ser útil e confiável, com base nas perguntas de autoavaliação que o próprio Google publica.","Avalie o conteúdo abaixo com as perguntas que o Google publica para autoavaliar conteúdo útil, confiável e feito para pessoas (experiência, especialização, autoridade e confiança, o E-E-A-T).
+
+Tema: [TEMA]
+Autor e credenciais: [AUTOR]
+Texto:
+[TEXTO]
+
+Entregue:
+1. Para cada pergunta de autoavaliação que se aplica ao texto, uma resposta (sim, em parte ou não) com o trecho que justifica.
+2. Onde falta experiência própria: trechos genéricos que qualquer site escreveria e o que a empresa poderia acrescentar (caso, foto, dado próprio, opinião de especialista).
+3. Afirmações que precisam de fonte e não têm.
+4. Sinais de confiança ausentes: autoria, data, revisão técnica, política de correção.
+5. As três mudanças que mais aumentariam a utilidade do texto, em ordem.
+
+Não dê nota numérica de E-E-A-T: essa nota não existe no Google. Se não lembrar exatamente das perguntas do Google, diga isso em vez de inventar.","[TEMA]: o assunto do conteúdo; [AUTOR]: nome, cargo e experiência de quem assina; [TEXTO]: o conteúdo completo","E-E-A-T não é um número nem um fator medido diretamente, e a IA costuma devolver uma nota de E-E-A-T que não significa nada. Ela também confunde as diretrizes dos avaliadores de qualidade com o algoritmo. Use a resposta como lista de melhorias e compare com a página oficial do Google sobre conteúdo útil.",Base de Conhecimento,E-E-A-T: o framework do Google para qualidade de conteúdo,https://github.com/TRIWI-SEO/SEO-IA/blob/main/seo-de-conteudo/e-e-a-t-o-framework-do-google-para-qualidade-de-conteudo.md,https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br,prompts-para-auditoria-de-pagina-seo.md,2026-11-09
+AU-03,Auditoria de página,Prompt para priorizar os problemas de um relatório de auditoria técnica,"Transformar a exportação de um rastreador, com centenas de alertas, numa lista curta de correções em ordem de impacto no negócio.","Abaixo está a exportação de um relatório de auditoria técnica feito com [FERRAMENTA] no site [SITE], que tem cerca de [NÚMERO DE PÁGINAS] páginas e vive de [MODELO DE NEGÓCIO]. As páginas que mais geram receita ou contatos são estas:
+[PÁGINAS PRIORITÁRIAS]
+
+Relatório:
+[RELATÓRIO]
+
+Tarefa:
+1. Agrupe os problemas por tipo e diga quantas URLs cada tipo afeta, usando só os números do relatório.
+2. Classifique cada tipo em: impede rastreamento ou indexação; afeta como a página aparece nos resultados; afeta a experiência; cosmético.
+3. Monte uma lista de prioridade que cruze a gravidade com a importância das páginas afetadas, com as páginas prioritárias primeiro.
+4. Para cada item da lista, escreva a correção em linguagem que um desenvolvedor entenda e como conferir que foi resolvida.
+5. Liste os alertas do relatório que podem ser ignorados neste site e explique por quê.
+
+Não acrescente problemas que não estão no relatório.","[FERRAMENTA]: o rastreador usado, como Screaming Frog ou Semrush; [SITE]: o domínio auditado; [NÚMERO DE PÁGINAS]: quantas páginas o site tem, aproximadamente; [MODELO DE NEGÓCIO]: como o site gera receita, por exemplo loja virtual, geração de leads ou assinatura; [PÁGINAS PRIORITÁRIAS]: URLs que mais geram receita ou contatos; [RELATÓRIO]: a exportação do relatório, em texto ou CSV","Relatórios de auditoria geram centenas de alertas, e a IA tende a tratar todos como urgentes ou a repetir a gravidade que a ferramenta atribuiu. Ela não sabe quais páginas trazem receita se você não disser. Arquivos grandes podem ser lidos pela metade sem aviso: confira se os totais da resposta batem com os do relatório.",Guia,Guia de SEO Técnico,https://triwi.com.br/guias/seo-tecnico/,n/d,prompts-para-auditoria-de-pagina-seo.md,2026-11-09
+GEO-01,Conteúdo citado por IAs,Prompt para reescrever a abertura e virar resposta citável,"Fazer os primeiros parágrafos de um conteúdo responderem a pergunta de forma completa e autocontida, do jeito que buscadores e IAs extraem.","Reescreva a abertura do conteúdo abaixo para que ela possa ser extraída e citada por uma IA ou por um AI Overview como resposta à pergunta [PERGUNTA].
+
+Texto atual:
+[TEXTO]
+
+Fontes que podem ser usadas:
+[FONTES]
+
+Regras:
+1. As duas primeiras frases respondem a pergunta de forma completa, sem introdução e sem depender do resto do texto.
+2. Use o nome da entidade (marca, produto, conceito) em vez de pronomes como ""ele"" ou ""isso"".
+3. Inclua uma definição, um critério ou um número, mas só se ele estiver no texto atual ou nas fontes acima.
+4. Logo depois, escreva uma frase de contexto: para quem vale, em que condição e desde quando.
+5. Mantenha a voz da marca [MARCA] e o português do Brasil.
+
+Entregue três versões e diga, para cada uma, o que ela prioriza.","[PERGUNTA]: a pergunta, escrita como o público pergunta à IA; [TEXTO]: o conteúdo atual, ou pelo menos os primeiros parágrafos; [FONTES]: links ou trechos das fontes que sustentam os números do texto; [MARCA]: nome da marca que publica o conteúdo","Para soar mais citável, a IA acrescenta números, anos e porcentagens que não estavam no texto. Uma abertura com dado inventado é justamente o trecho que outra IA vai copiar, com o nome da sua marca ao lado. Compare cada número da versão nova com a fonte original antes de publicar.",Skill,Skill: criar conteúdo para SEO e IA,https://triwi.com.br/skills/criar-conteudo-para-seo-e-ia/,n/d,prompts-para-ser-citado-por-ias.md,2026-11-09
+GEO-02,Conteúdo citado por IAs,Prompt para diagnosticar por que um conteúdo não é citado pelas IAs,Avaliar uma página com os critérios que tornam um texto uma boa fonte para respostas de IA e listar as mudanças que mais pesam.,"Analise o conteúdo abaixo como um sistema de busca com IA faria ao decidir se usa a página como fonte para responder à pergunta [PERGUNTA].
+
+Texto:
+[TEXTO]
+
+Avalie cada item em uma linha, com o trecho que justifica:
+1. A resposta à pergunta aparece de forma direta e autocontida? Em que parágrafo?
+2. Há trechos que funcionam sozinhos, fora do contexto da página (definições, listas, tabelas, passo a passo)?
+3. As afirmações importantes têm fonte, data e recorte?
+4. A entidade principal está nomeada com clareza e sempre do mesmo jeito?
+5. Há informação própria que outras páginas não têm (dado, caso, método, opinião de especialista)?
+6. Há trechos vagos, promocionais ou genéricos que uma IA descartaria?
+
+Depois, liste as cinco mudanças com mais chance de tornar a página uma fonte útil, em ordem.
+
+Não afirme que a página será citada: nenhum ajuste garante citação.",[PERGUNTA]: a pergunta para a qual a página deveria ser citada; [TEXTO]: o conteúdo completo da página,"A IA não sabe como o ChatGPT, o Gemini ou o Perplexity escolhem fontes: ela descreve boas práticas plausíveis, não o funcionamento interno de cada sistema. Também não sabe se a página está indexada ou se o robô daquela IA tem acesso ao site. Para os AI Overviews, o Google diz que a página precisa estar indexada e apta a aparecer com snippet; confirme isso e o acesso dos robôs antes de reescrever o texto.",Checklist,Checklist de SEO para IA,https://triwi.com.br/checklist-de-seo-para-ia-50-pontos-para-dominar-o-geo/,https://developers.google.com/search/docs/appearance/ai-features?hl=pt-br,prompts-para-ser-citado-por-ias.md,2026-11-09
+GEO-03,Conteúdo citado por IAs,Prompt para transformar um texto corrido em blocos extraíveis,"Reorganizar um conteúdo, sem mudar a informação, em perguntas, respostas curtas, tabelas e listas que buscadores e IAs conseguem extrair.","Reorganize o conteúdo abaixo, sem mudar a informação, para que ele fique fácil de extrair por buscadores e IAs. O público é [PÚBLICO].
+
+Texto:
+[TEXTO]
+
+Faça:
+1. Proponha títulos H2 e H3 em formato de pergunta real que esse público faria.
+2. Abaixo de cada título, comece pela resposta em uma ou duas frases.
+3. Transforme comparações em tabela, sequências em lista numerada e critérios em lista com marcadores.
+4. Escreva um resumo de até cinco frases para o topo da página.
+5. Aponte os trechos repetidos que podem sair.
+
+Regras: não acrescente informação nova. Se faltar informação para responder um título, escreva (falta: o que falta) no lugar, para o autor completar.","[PÚBLICO]: quem lê o conteúdo; [TEXTO]: o conteúdo completo, como está publicado","Ao reorganizar, a IA resume demais e some com nuances, exceções e ressalvas, que são justamente o que dá precisão ao texto. Também monta tabelas com células preenchidas por suposição. Leia o texto original e o novo lado a lado e confira que nenhuma condição ou exceção desapareceu.",Guia,Guia de GEO: Otimização para IAs,https://triwi.com.br/guias/geo/,n/d,prompts-para-ser-citado-por-ias.md,2026-11-09
+SERP-01,Análise de concorrência na SERP,Prompt para ler a página de resultados de uma busca,"Entender qual intenção o Google está atendendo numa busca, que tipo de página ganha e que ângulo ninguém ocupou, a partir da SERP coletada.","Abaixo estão os dez primeiros resultados orgânicos do Google Brasil para a busca [PALAVRA PRINCIPAL], coletados em [DATA], com título, URL e descrição de cada um, e os recursos que apareceram na página (AI Overview, perguntas relacionadas, vídeos, mapa, produtos):
+[RESULTADOS DA SERP]
+
+Analise:
+1. Qual intenção o Google está atendendo: aprender, comparar, comprar, encontrar um lugar ou uma marca? Justifique com os resultados.
+2. Que tipos de página aparecem (artigo, categoria, produto, ferramenta, vídeo, fórum) e quantos de cada.
+3. Que ângulo se repete nos títulos e o que nenhum resultado oferece.
+4. Que recursos da página de resultados disputam o clique com os resultados orgânicos.
+5. Que tipo de página, com que ângulo, teria chance real de entrar nesses resultados, considerando o site [SITE].
+
+Use apenas os resultados que colei. Não descreva resultados de memória.","[PALAVRA PRINCIPAL]: a busca analisada; [DATA]: o dia da coleta; [RESULTADOS DA SERP]: título, URL e descrição dos dez primeiros resultados e a lista dos recursos que apareceram; [SITE]: o domínio do seu site","Sem a SERP colada, a IA descreve de memória uma página de resultados que pode ser de outro país, de outro idioma ou de anos atrás. Mesmo com busca na web ativada, o que ela vê não é o que um usuário no Brasil vê. Colete a SERP numa janela anônima, com a localização certa, e registre a data.",Base de Conhecimento,Análise de concorrência em SEO: como identificar oportunidades,https://github.com/TRIWI-SEO/SEO-IA/blob/main/metricas-e-ferramentas/analise-de-concorrencia-em-seo-como-identificar-oportunidades.md,n/d,prompts-para-analise-de-concorrencia-na-serp.md,2026-11-09
+SERP-02,Análise de concorrência na SERP,Prompt para comparar a sua página com as que estão à frente,"Descobrir o que as páginas mais bem posicionadas cobrem e a sua não, e o que a sua tem de próprio, sem cair na armadilha de escrever mais.","Compare a minha página com as três que estão à frente dela no Google Brasil para a busca [PALAVRA PRINCIPAL].
+
+Minha página ([MINHA URL]):
+[TEXTO DA MINHA PÁGINA]
+
+Concorrente 1 ([URL 1]):
+[TEXTO 1]
+
+Concorrente 2 ([URL 2]):
+[TEXTO 2]
+
+Concorrente 3 ([URL 3]):
+[TEXTO 3]
+
+Entregue uma tabela com uma linha por critério e uma coluna por página: resposta direta à busca; subtemas cobertos; provas e fontes; experiência própria; formatos (tabela, lista, vídeo, ferramenta); sinais de atualização; chamada para ação.
+
+Depois, liste:
+1. Os subtemas que os concorrentes cobrem e a minha página não.
+2. O que a minha página tem e os concorrentes não, e que deve ganhar destaque.
+3. As cinco mudanças com mais impacto, em ordem.
+
+Não copie trechos dos concorrentes nem sugira copiar. Não estime autoridade de domínio nem backlinks: esses dados não estão no material.",[PALAVRA PRINCIPAL]: a busca disputada; [MINHA URL]: o endereço da sua página; [TEXTO DA MINHA PÁGINA]: o texto da sua página; [URL 1]: endereço do primeiro concorrente; [TEXTO 1]: texto do primeiro concorrente; [URL 2]: endereço do segundo concorrente; [TEXTO 2]: texto do segundo concorrente; [URL 3]: endereço do terceiro concorrente; [TEXTO 3]: texto do terceiro concorrente,"A IA compara só o texto, e uma página pode estar à frente por motivos que não aparecem nele: autoridade do domínio, links, histórico, marca. Ela também tende a recomendar escrever mais porque os concorrentes são longos. O Google diz que não tem contagem de palavras preferida: o que pesa é cobrir a intenção de quem busca.",Guia,Guia de SEO,https://triwi.com.br/guias/seo/,https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br,prompts-para-analise-de-concorrencia-na-serp.md,2026-11-09
+SERP-03,Análise de concorrência na SERP,Prompt para mapear quais sites dominam um grupo de buscas,"Ver, num conjunto de buscas importantes, quem ocupa as primeiras posições, onde os concorrentes diretos dominam e onde há espaço aberto.","Abaixo está uma tabela com as buscas mais importantes do mercado de [SETOR] e os domínios que apareceram nas três primeiras posições orgânicas de cada uma, coletada em [DATA]:
+[TABELA DE BUSCAS E DOMÍNIOS]
+
+Tarefa:
+1. Conte quantas vezes cada domínio aparece e em quais buscas, usando só a tabela.
+2. Classifique os domínios em: concorrente direto, portal ou mídia, marketplace, órgão oficial, fórum ou comunidade, outro. Os concorrentes diretos são: [CONCORRENTES].
+3. Mostre em que buscas nenhum concorrente direto aparece (espaço aberto) e em quais eles dominam.
+4. Diga que tipo de conteúdo cada grupo de domínios usa para ocupar essas posições.
+5. Sugira por onde a empresa [EMPRESA] deveria começar, com justificativa.
+
+Não acrescente domínios que não estão na tabela. Quando não souber o que é um domínio, classifique como ""a conferir"".","[SETOR]: o mercado analisado; [DATA]: o dia da coleta; [TABELA DE BUSCAS E DOMÍNIOS]: uma linha por busca, com os três domínios do topo; [CONCORRENTES]: os domínios que a empresa considera concorrentes diretos; [EMPRESA]: nome da empresa que vai usar a análise","Ao classificar domínios, a IA deduz o que cada site é pelo nome e erra com frequência: confunde marca com portal, ou um concorrente com um fornecedor. Também pode errar a contagem em tabelas longas. Por isso o prompt pede a lista de concorrentes e o rótulo a conferir. Confira os maiores números na planilha original.",Ferramenta,Gerador de buscas avançadas (Dorks),https://triwi.com.br/ferramentas/gerador-de-buscas-avancadas-dorks/,n/d,prompts-para-analise-de-concorrencia-na-serp.md,2026-11-09
+FAQ-01,Perguntas frequentes (FAQ),Prompt para criar as perguntas frequentes de uma página,"Escrever uma FAQ com as perguntas que o cliente faz de verdade e respostas curtas, completas na primeira frase e apoiadas só em informação da empresa.","Crie as perguntas frequentes da página [PÁGINA] da empresa [EMPRESA], que vende [OFERTA] para [PÚBLICO].
+
+Use como base, nesta ordem de prioridade:
+1. As perguntas reais que o atendimento e vendas recebem: [PERGUNTAS DO ATENDIMENTO]
+2. As perguntas relacionadas que o Google mostra para a busca [PALAVRA PRINCIPAL]: [PERGUNTAS DA SERP]
+3. O que a página não responde e o comprador precisa saber.
+
+Para cada pergunta:
+1. Escreva a pergunta como o cliente pergunta, não como a empresa gostaria.
+2. Responda na primeira frase, de forma completa, em até 60 palavras no total.
+3. Use só a informação deste material: [INFORMAÇÕES DA EMPRESA]. Onde faltar, escreva ""a confirmar com a empresa"".
+
+Entregue de oito a doze perguntas, sem repetir o que o corpo da página já responde com destaque.","[PÁGINA]: o endereço ou o tema da página; [EMPRESA]: nome da empresa ou da marca; [OFERTA]: o que a empresa vende; [PÚBLICO]: quem compra; [PERGUNTAS DO ATENDIMENTO]: dúvidas reais recebidas por atendimento e vendas; [PALAVRA PRINCIPAL]: a busca principal da página; [PERGUNTAS DA SERP]: as perguntas do bloco de perguntas relacionadas do Google; [INFORMAÇÕES DA EMPRESA]: políticas, prazos, condições e fatos que as respostas podem usar","A IA responde perguntas sobre prazo, valor, garantia e política com informação plausível e inventada, e a FAQ é um dos trechos mais copiados por buscadores e IAs. Toda resposta precisa ser conferida por alguém da empresa. O resultado enriquecido de perguntas frequentes deixou de aparecer no Google em 7 de maio de 2026: a FAQ vale pelo que responde ao leitor e às IAs, não por um destaque visual na busca.",Skill,Skill: criar conteúdo para SEO e IA,https://triwi.com.br/skills/criar-conteudo-para-seo-e-ia/,https://developers.google.com/search/updates?hl=pt-br,prompts-para-faq-e-perguntas-frequentes.md,2026-11-09
+FAQ-02,Perguntas frequentes (FAQ),Prompt para transformar o histórico do atendimento em FAQ,Agrupar as mensagens do atendimento por dúvida de fundo e transformar as mais frequentes em perguntas e respostas-modelo.,"Abaixo estão mensagens reais recebidas pelo atendimento da empresa [EMPRESA] (e-mails, chats e chamados), já sem dados pessoais:
+[MENSAGENS]
+
+Tarefa:
+1. Agrupe as mensagens por dúvida de fundo, mesmo quando escritas de jeitos diferentes.
+2. Ordene os grupos pela quantidade de mensagens.
+3. Para cada grupo, escreva a pergunta na forma mais comum em que ela aparece e uma resposta-modelo que use só o que está nestas políticas: [POLÍTICAS DA EMPRESA].
+4. Separe as dúvidas que indicam problema no produto ou na comunicação, e não falta de FAQ.
+
+Não reproduza nome, e-mail, telefone, documento ou qualquer dado que identifique pessoas.","[EMPRESA]: nome da empresa ou da marca; [MENSAGENS]: mensagens do atendimento, sem nome, e-mail, telefone, documento ou número de pedido; [POLÍTICAS DA EMPRESA]: regras de troca, prazo, pagamento, suporte e demais políticas oficiais","Retire os dados pessoais antes de colar: nome, e-mail, telefone, documento e número de pedido não devem ir para a IA, pela LGPD e pela política da própria empresa. A IA também junta dúvidas diferentes num grupo só porque usam as mesmas palavras; confira os grupos maiores lendo algumas mensagens de cada um.",Artigo,"LGPD e IA, no blog da TRIWI",https://triwi.com.br/lgpd-e-ia-interseccoes-lacunas-e-o-que-as-empresas-precisam-saber-agora/,https://www.gov.br/anpd/pt-br,prompts-para-faq-e-perguntas-frequentes.md,2026-11-09
+FAQ-03,Perguntas frequentes (FAQ),Prompt para revisar uma FAQ que já está publicada,"Encontrar perguntas mal escritas, respostas que demoram a responder, informação desatualizada e repetições, sem mudar fatos sem confirmação.","Revise as perguntas frequentes abaixo, publicadas na página [PÁGINA]:
+[FAQ ATUAL]
+
+Para cada pergunta, diga:
+1. Se ela está escrita como o cliente pergunta ou como a empresa fala.
+2. Se a resposta responde já na primeira frase.
+3. Se há informação que pode estar desatualizada (prazo, valor, regra, data) e precisa ser conferida.
+4. Se ela repete outra pergunta da lista ou o corpo da página.
+5. A versão revisada, quando precisar.
+
+No fim, liste as perguntas que faltam e as que podem sair.
+
+Não altere fatos. Onde achar que um fato está errado, aponte e peça confirmação.",[PÁGINA]: o endereço ou o tema da página; [FAQ ATUAL]: as perguntas e respostas como estão publicadas,"A IA corrige o estilo e, no caminho, muda fatos: arredonda prazos, troca condições, generaliza regras. Revise as respostas novas contra as antigas, frase por frase, antes de publicar. Se a página tem dados estruturados de perguntas frequentes, o JSON-LD precisa repetir o texto revisado que está visível na página.",Ferramenta,Gerador de dados estruturados,https://triwi.com.br/ferramentas/gerador-de-dados-estruturados/,n/d,prompts-para-faq-e-perguntas-frequentes.md,2026-11-09
+TD-01,Títulos e descrições,Prompt para escrever o title e a meta description de uma página,"Criar opções de title e de meta description que descrevem a página com fidelidade, trazem a busca principal e convencem a clicar.","Escreva o elemento title e a meta description da página descrita abaixo.
+
+- Palavra-chave principal: [PALAVRA PRINCIPAL]
+- O que a página entrega: [RESUMO DA PÁGINA]
+- Marca: [MARCA]
+- Diferencial que a página comprova: [DIFERENCIAL]
+
+Regras para o title:
+1. Comece pela palavra-chave principal ou por uma variação natural dela.
+2. Descreva o conteúdo real da página, sem prometer o que ela não entrega.
+3. Termine com a marca, separada por dois-pontos, vírgula ou barra vertical.
+4. Mire em até 60 caracteres, para reduzir a chance de corte.
+
+Regras para a meta description:
+1. Resuma o que a pessoa encontra e por que vale clicar, em uma ou duas frases.
+2. Mire em até 155 caracteres.
+3. Não use aspas duplas, que quebram o atributo content quando não são escapadas.
+
+Entregue cinco opções de cada, com a contagem de caracteres ao lado, e diga qual combinação você escolheria e por quê.","[PALAVRA PRINCIPAL]: a busca principal da página; [RESUMO DA PÁGINA]: o que a página entrega, em uma ou duas frases; [MARCA]: o nome da marca como deve aparecer no title; [DIFERENCIAL]: o que a página tem de específico e consegue provar","A IA conta caracteres mal e costuma errar a contagem que ela mesma escreve ao lado; confira numa ferramenta. O Google não tem limite oficial de caracteres para title nem para meta description: corta pela largura da tela, pode reescrever o título a partir de outros elementos da página e usa outro trecho do texto como descrição quando acha melhor. Os 60 e os 155 caracteres são referência prática, não regra.",Ferramenta,Simulador de resultado no Google,https://triwi.com.br/ferramentas/simulador-de-resultado-no-google/,https://developers.google.com/search/docs/appearance/title-link?hl=pt-br; https://developers.google.com/search/docs/appearance/snippet?hl=pt-br,prompts-para-titulos-e-meta-descriptions.md,2026-11-09
+TD-02,Títulos e descrições,Prompt para reescrever títulos de páginas com CTR baixo,Encontrar páginas que aparecem muito e são pouco clicadas e propor títulos e descrições que respondam melhor à consulta.,"Abaixo estão páginas do site [SITE] com muitas impressões e taxa de cliques (CTR) baixa no Search Console, com a consulta principal, a posição média e o title atual de cada uma:
+[TABELA DO SEARCH CONSOLE]
+
+Para cada página:
+1. Diga por que o title atual pode estar perdendo o clique: não responde a consulta, é genérico, é cortado, é igual aos concorrentes ou promete pouco.
+2. Escreva duas alternativas de title que respondam a consulta principal.
+3. Escreva uma meta description nova.
+
+Regras: não use números, anos ou promessas que a página não comprova. Não use caixa alta para chamar atenção nem emojis. Mantenha a marca [MARCA] no fim do title.","[SITE]: o domínio do site; [TABELA DO SEARCH CONSOLE]: URL, consulta principal, impressões, cliques, CTR, posição média e title atual de cada página; [MARCA]: o nome da marca como deve aparecer no title","CTR baixo nem sempre é culpa do título: posição média pior que a quinta, AI Overview, anúncios e outros recursos na página de resultados derrubam o clique sem relação com o texto, e a IA não vê nada disso na tabela. Priorize as páginas com posição boa e CTR abaixo do de páginas parecidas do mesmo site, e meça de novo algumas semanas depois da troca.",Ferramenta,Analisador de CSV do Search Console,https://triwi.com.br/ferramentas/analisador-de-csv-do-search-console/,n/d,prompts-para-titulos-e-meta-descriptions.md,2026-11-09
+TD-03,Títulos e descrições,"Prompt para gerar títulos e descrições em lote, sem duplicar","Escrever title e meta description para muitas páginas parecidas (produtos, categorias, unidades) seguindo um padrão e sem repetir textos.","Abaixo está uma lista de páginas do tipo [TIPO DE PÁGINA] do site [SITE], com URL, nome e atributos principais de cada uma:
+[LISTA DE PÁGINAS]
+
+Escreva um title e uma meta description para cada página, seguindo este padrão:
+- Title: [PADRÃO DO TITLE]
+- Meta description: uma frase com o que a página tem de específico, usando os atributos da lista.
+
+Regras:
+1. Nenhum title e nenhuma descrição pode repetir outro da lista.
+2. Use só os atributos que estão na lista. Não invente característica, condição comercial ou prazo.
+3. Devolva uma tabela com as colunas: URL; title; caracteres do title; meta description; caracteres da descrição.
+4. Devolva exatamente o mesmo número de linhas que recebeu. Se pular alguma, avise.","[TIPO DE PÁGINA]: produto, categoria, unidade, cidade ou outro tipo; [SITE]: o domínio do site; [LISTA DE PÁGINAS]: uma linha por página, com URL, nome e atributos; [PADRÃO DO TITLE]: o modelo do title, como nome do produto, dois-pontos, atributo principal e a marca no fim","Em listas longas a IA pula linhas, repete descrições quase iguais e, perto do fim, começa a inventar atributos. Mande em lotes de cinquenta a cem páginas, confira se o número de linhas devolvidas bate com o enviado e passe o resultado por um auditor de duplicidade antes de subir.",Ferramenta,Auditor de títulos e descrições em massa,https://triwi.com.br/ferramentas/auditor-de-titulos-e-descricoes-em-massa/,n/d,prompts-para-titulos-e-meta-descriptions.md,2026-11-09
+MED-01,Medição de presença nas IAs,Prompt para montar o conjunto de perguntas que mede a marca nas IAs,"Criar a lista fixa de perguntas que o público faz às IAs, separando perguntas com e sem marca, para medir o Share of Model todo mês.","Quero medir com que frequência a marca [MARCA] aparece nas respostas de IAs como ChatGPT, Gemini, Claude, Perplexity e Copilot. A empresa vende [OFERTA] para [PÚBLICO] em [LOCAL], e os concorrentes que queremos acompanhar são: [CONCORRENTES].
+
+Monte um conjunto de 30 a 50 perguntas, em português do Brasil, que esse público faria a uma IA, distribuídas em cinco categorias:
+1. Descoberta: pedidos de indicação, como ""quais são as melhores opções de ..."", sem citar marca.
+2. Problema: perguntas sobre a dor, sem pedir indicação.
+3. Comparação: entre tipos de solução e entre as marcas citadas.
+4. Decisão: critérios, riscos e como escolher.
+5. Marca: perguntas que citam a marca [MARCA] pelo nome (reputação, avaliações, alternativas).
+
+Para cada pergunta, indique a categoria e se ela cita marca ou não. Escreva como uma pessoa escreve para a IA, em linguagem natural, e não como palavra-chave.","[MARCA]: o nome da marca medida; [OFERTA]: o que a empresa vende; [PÚBLICO]: quem compra; [LOCAL]: país, estado ou cidade em que a empresa atende; [CONCORRENTES]: as marcas concorrentes que entram na medição","Um conjunto de perguntas só serve se for repetido igual, mês após mês. Revise a lista, congele e não deixe a IA reescrever as perguntas a cada rodada. Perguntas que citam a marca medem reputação, não descoberta: mantenha as duas separadas, senão o resultado parece melhor do que é.",Base de Conhecimento,Share of Model: como medir a presença da sua marca nas IAs,https://github.com/TRIWI-SEO/SEO-IA/blob/main/geo-seo-para-ia/share-of-model-como-medir-a-presenca-da-sua-marca-nas-ias.md,n/d,prompts-para-medir-presenca-da-marca-nas-ias.md,2026-11-09
+MED-02,Medição de presença nas IAs,Prompt para registrar a resposta de uma IA em formato de tabela,"Extrair de uma resposta real de IA as marcas citadas, a posição, o tipo de menção e as fontes, numa linha de tabela pronta para a planilha de medição.","Abaixo está a resposta que a IA [NOME DA IA] deu em [DATA] à pergunta ""[PERGUNTA]"", coletada numa conversa nova, sem memória e sem personalização:
+[RESPOSTA COLADA]
+
+Extraia, sem interpretar além do texto:
+1. Todas as marcas e empresas citadas, na ordem em que aparecem.
+2. Para cada uma: a posição na resposta; se foi recomendada, apenas mencionada ou citada de forma negativa; o trecho exato.
+3. As fontes ou links que a resposta mostrou, com o domínio de cada um.
+4. Se a marca [MARCA] aparece: sim ou não, em que posição e com que tom.
+
+Devolva uma linha de tabela por marca citada, com as colunas: data; IA; pergunta; marca; posição; tipo de menção; trecho; fonte citada.
+Se uma informação não estiver na resposta, escreva n/d.","[NOME DA IA]: a IA que respondeu, com o modelo, se aparecer; [DATA]: o dia da coleta; [PERGUNTA]: a pergunta exatamente como foi feita, copiada do conjunto fixo; [RESPOSTA COLADA]: a resposta completa, com as fontes que ela mostrou; [MARCA]: a marca medida","Não peça à IA para dizer se ela costuma citar a sua marca: ela não tem registro das próprias respostas e vai responder o que parece plausível. A medição é feita colhendo respostas reais, numa conversa nova e sem memória, e depois extraindo os dados. As respostas variam de uma consulta para outra, então rode cada pergunta mais de uma vez e trabalhe com a frequência, não com uma resposta isolada.",Guia,Guia de GEO: Otimização para IAs,https://triwi.com.br/guias/geo/,n/d,prompts-para-medir-presenca-da-marca-nas-ias.md,2026-11-09
+MED-03,Medição de presença nas IAs,Prompt para consolidar o Share of Model do mês,"Calcular, a partir das respostas coletadas, a fatia de respostas em que cada marca aparece, por IA e por tipo de pergunta, e comparar com o mês anterior.","Abaixo está a tabela com todas as respostas coletadas em [MÊS] para o conjunto de perguntas da marca [MARCA], com uma linha por marca citada em cada resposta:
+[TABELA DO MÊS]
+
+E a tabela do mês anterior, no mesmo formato:
+[TABELA DO MÊS ANTERIOR]
+
+Calcule e mostre em tabela:
+1. O Share of Model de cada marca: número de respostas em que a marca aparece dividido pelo total de respostas, por IA e no geral.
+2. O mesmo cálculo separado entre perguntas que citam marca e perguntas sem marca.
+3. A posição média de cada marca quando ela aparece.
+4. Os domínios mais citados como fonte e quantas vezes cada um aparece.
+5. A variação de cada indicador em relação ao mês anterior.
+
+Mostre a fórmula de cada cálculo e os totais usados, para eu conferir. Depois, liste três observações que os números sustentam e três hipóteses que precisam de mais dados.","[MÊS]: o mês da coleta; [MARCA]: a marca medida; [TABELA DO MÊS]: as linhas registradas no mês, no formato do prompt de registro; [TABELA DO MÊS ANTERIOR]: as linhas do mês anterior, no mesmo formato","A IA erra conta, principalmente em tabela longa, e erra com convicção. Use a resposta para a leitura, mas refaça os cálculos numa planilha a partir da tabela original. E não compare meses em que o conjunto de perguntas, as IAs ou a forma de coleta mudaram: a variação vira efeito do método, não da marca.",Guia,Guia de Métricas de SEO e IA,https://triwi.com.br/guias/metricas-de-seo/,n/d,prompts-para-medir-presenca-da-marca-nas-ias.md,2026-11-09
