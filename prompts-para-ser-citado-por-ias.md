@@ -2,7 +2,7 @@
 
 **Para ser citado por ChatGPT, Gemini, Claude, Perplexity e AI Overviews, o conteúdo precisa responder de forma direta, em trechos que funcionam sozinhos, com a entidade clara e fonte em cada afirmação. Os prompts desta página reescrevem a abertura, diagnosticam a página e reorganizam o texto em blocos extraíveis.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para reescrever a abertura e virar resposta citável](#prompt-para-reescrever-a-abertura-e-virar-resposta-citável)
 - [Prompt para diagnosticar por que um conteúdo não é citado pelas IAs](#prompt-para-diagnosticar-por-que-um-conteúdo-não-é-citado-pelas-ias)
 - [Prompt para transformar um texto corrido em blocos extraíveis](#prompt-para-transformar-um-texto-corrido-em-blocos-extraíveis)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre conteúdo citado por IAs?](#o-que-a-triwi-tem-sobre-conteúdo-citado-por-ias)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -128,6 +129,15 @@ Regras: não acrescente informação nova. Se faltar informação para responder
 **Na TRIWI:** [Guia de GEO: Otimização para IAs](https://triwi.com.br/guias/geo/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=ser-citado-por-ias), guia da TRIWI com o método completo.
 
 <sub>Código do prompt: GEO-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para criar FAQ e perguntas frequentes com IA](prompts-para-faq-e-perguntas-frequentes.md) | Fechar a página com as perguntas reais do público |
+| [Prompts para title e meta description de SEO no ChatGPT, Claude e Gemini](prompts-para-titulos-e-meta-descriptions.md) | Escrever o title e a meta description da versão final |
 
 ## O que a TRIWI tem sobre conteúdo citado por IAs?
 
