@@ -2,7 +2,7 @@
 
 **Para medir a presença da marca nas IAs, faça sempre o mesmo conjunto de perguntas ao ChatGPT, Gemini, Claude, Perplexity e Copilot, registre quem é citado em cada resposta e calcule o Share of Model, a fatia das respostas em que a marca aparece. Os prompts desta página montam as perguntas, registram as respostas e consolidam o mês.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para montar o conjunto de perguntas que mede a marca nas IAs](#prompt-para-montar-o-conjunto-de-perguntas-que-mede-a-marca-nas-ias)
 - [Prompt para registrar a resposta de uma IA em formato de tabela](#prompt-para-registrar-a-resposta-de-uma-ia-em-formato-de-tabela)
 - [Prompt para consolidar o Share of Model do mês](#prompt-para-consolidar-o-share-of-model-do-mês)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre medição de presença nas IAs?](#o-que-a-triwi-tem-sobre-medição-de-presença-nas-ias)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -122,6 +123,15 @@ Mostre a fórmula de cada cálculo e os totais usados, para eu conferir. Depois,
 **Na TRIWI:** [Guia de Métricas de SEO e IA](https://triwi.com.br/guias/metricas-de-seo/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=medir-presenca-da-marca-nas-ias), guia da TRIWI com o método completo.
 
 <sub>Código do prompt: MED-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para otimizar conteúdo e ser citado por IAs (GEO)](prompts-para-ser-citado-por-ias.md) | Melhorar as páginas das perguntas em que a marca não aparece |
+| [Prompts para pesquisa de palavras-chave no ChatGPT, Claude e Gemini](prompts-para-pesquisa-de-palavras-chave.md) | Levar para a pesquisa as perguntas em que os concorrentes dominam |
 
 ## O que a TRIWI tem sobre medição de presença nas IAs?
 
