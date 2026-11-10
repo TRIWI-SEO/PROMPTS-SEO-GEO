@@ -2,7 +2,7 @@
 
 **Um prompt de briefing faz a IA planejar o conteúdo antes de escrever: intenção de busca, recorte, estrutura em perguntas, evidências a coletar e critérios de aceite. Os prompts desta página cobrem conteúdo novo, atualização de conteúdo que perdeu posição e página de produto ou serviço.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para montar o briefing de um conteúdo novo](#prompt-para-montar-o-briefing-de-um-conteúdo-novo)
 - [Prompt para o briefing de atualização de um conteúdo que perdeu posição](#prompt-para-o-briefing-de-atualização-de-um-conteúdo-que-perdeu-posição)
 - [Prompt para o briefing de uma página de produto ou serviço](#prompt-para-o-briefing-de-uma-página-de-produto-ou-serviço)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre briefing de conteúdo?](#o-que-a-triwi-tem-sobre-briefing-de-conteúdo)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -147,6 +148,15 @@ Não crie diferenciais, números, certificações ou depoimentos que não esteja
 **Na TRIWI:** [Guia de Conteúdo para SEO e IA](https://triwi.com.br/guias/conteudo/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=briefing-de-conteudo-seo), guia da TRIWI com o método completo.
 
 <sub>Código do prompt: BR-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para otimizar conteúdo e ser citado por IAs (GEO)](prompts-para-ser-citado-por-ias.md) | Depois de escrito, deixar o texto pronto para ser extraído e citado |
+| [Prompts para criar FAQ e perguntas frequentes com IA](prompts-para-faq-e-perguntas-frequentes.md) | Responder as objeções que o briefing levantou |
 
 ## O que a TRIWI tem sobre briefing de conteúdo?
 
