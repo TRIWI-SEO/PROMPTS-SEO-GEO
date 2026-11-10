@@ -2,7 +2,7 @@
 
 **O title e a meta description decidem se a pessoa clica no seu resultado. A IA escreve boas opções quando recebe a busca, o que a página entrega e a marca, mas erra a contagem de caracteres e inventa promessas. Os prompts desta página escrevem para uma página, reescrevem títulos com CTR baixo e geram textos em lote.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para escrever o title e a meta description de uma página](#prompt-para-escrever-o-title-e-a-meta-description-de-uma-página)
 - [Prompt para reescrever títulos de páginas com CTR baixo](#prompt-para-reescrever-títulos-de-páginas-com-ctr-baixo)
 - [Prompt para gerar títulos e descrições em lote, sem duplicar](#prompt-para-gerar-títulos-e-descrições-em-lote-sem-duplicar)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre títulos e descrições?](#o-que-a-triwi-tem-sobre-títulos-e-descrições)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -126,6 +127,14 @@ Regras:
 **Na TRIWI:** [Auditor de títulos e descrições em massa](https://triwi.com.br/ferramentas/auditor-de-titulos-e-descricoes-em-massa/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=titulos-e-meta-descriptions), ferramenta gratuita da TRIWI, no navegador e sem cadastro.
 
 <sub>Código do prompt: TD-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para links internos de SEO no ChatGPT, Claude e Gemini](prompts-para-links-internos-seo.md) | Ligar a página às outras do mesmo tema antes de publicar |
 
 ## O que a TRIWI tem sobre títulos e descrições?
 
