@@ -2,7 +2,7 @@
 
 **A IA ajuda a auditar uma página de SEO quando recebe o HTML, o texto ou o relatório de um rastreador, mas não rastreia o site, não mede velocidade e não vê o índice do Google. Os prompts desta página cobrem auditoria on-page, qualidade do conteúdo e priorização de relatório técnico.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para auditoria de SEO on-page a partir do HTML](#prompt-para-auditoria-de-seo-on-page-a-partir-do-html)
 - [Prompt para avaliar a qualidade e o E-E-A-T de um conteúdo](#prompt-para-avaliar-a-qualidade-e-o-e-e-a-t-de-um-conteúdo)
 - [Prompt para priorizar os problemas de um relatório de auditoria técnica](#prompt-para-priorizar-os-problemas-de-um-relatório-de-auditoria-técnica)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre auditoria de página?](#o-que-a-triwi-tem-sobre-auditoria-de-página)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -137,6 +138,14 @@ Não acrescente problemas que não estão no relatório.
 **Na TRIWI:** [Guia de SEO Técnico](https://triwi.com.br/guias/seo-tecnico/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=auditoria-de-pagina-seo), guia da TRIWI com o método completo.
 
 <sub>Código do prompt: AU-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para relatório de SEO e ROI no ChatGPT, Claude e Gemini](prompts-para-relatorio-de-seo.md) | Mostrar o efeito das correções em linguagem de negócio |
 
 ## O que a TRIWI tem sobre auditoria de página?
 
