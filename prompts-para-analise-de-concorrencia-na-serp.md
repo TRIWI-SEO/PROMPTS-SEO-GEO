@@ -2,7 +2,7 @@
 
 **Analisar a concorrência na SERP é ler quem aparece na página de resultados do Google, por quê e o que falta nela. A IA faz bem essa leitura quando recebe os resultados coletados, com data e local; de memória, descreve uma SERP que não existe. Os prompts desta página leem uma SERP, comparam páginas e mapeiam domínios.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para ler a página de resultados de uma busca](#prompt-para-ler-a-página-de-resultados-de-uma-busca)
 - [Prompt para comparar a sua página com as que estão à frente](#prompt-para-comparar-a-sua-página-com-as-que-estão-à-frente)
 - [Prompt para mapear quais sites dominam um grupo de buscas](#prompt-para-mapear-quais-sites-dominam-um-grupo-de-buscas)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre análise de concorrência na SERP?](#o-que-a-triwi-tem-sobre-análise-de-concorrência-na-serp)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -137,6 +138,14 @@ Não acrescente domínios que não estão na tabela. Quando não souber o que é
 **Na TRIWI:** [Gerador de buscas avançadas (Dorks)](https://triwi.com.br/ferramentas/gerador-de-buscas-avancadas-dorks/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=analise-de-concorrencia-na-serp), ferramenta gratuita da TRIWI, no navegador e sem cadastro.
 
 <sub>Código do prompt: SERP-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para briefing de conteúdo de SEO no ChatGPT, Claude e Gemini](prompts-para-briefing-de-conteudo-seo.md) | Levar para o briefing o ângulo que nenhum resultado ocupa |
 
 ## O que a TRIWI tem sobre análise de concorrência na SERP?
 
