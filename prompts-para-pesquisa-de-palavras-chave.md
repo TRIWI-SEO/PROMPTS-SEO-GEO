@@ -2,7 +2,7 @@
 
 **Prompts de pesquisa de palavras-chave geram e organizam ideias de busca, mas não medem demanda: a IA não tem acesso a volume de busca. Os prompts desta página expandem um tema por intenção, agrupam uma lista exportada em clusters e levantam as perguntas que o público faz antes de comprar.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 *Por equipe de SEO da TRIWI, com revisão de Ricardo Martins, fundador. Publicado em 09/11/2026. Atualizado em 09/11/2026.*
 
@@ -11,6 +11,7 @@ São três prompts em português, cada um com objetivo, campos a preencher, o pr
 - [Prompt para expandir um tema em palavras-chave por intenção de busca](#prompt-para-expandir-um-tema-em-palavras-chave-por-intenção-de-busca)
 - [Prompt para agrupar palavras-chave em clusters e páginas](#prompt-para-agrupar-palavras-chave-em-clusters-e-páginas)
 - [Prompt para descobrir as perguntas que o público faz antes de comprar](#prompt-para-descobrir-as-perguntas-que-o-público-faz-antes-de-comprar)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre pesquisa de palavras-chave?](#o-que-a-triwi-tem-sobre-pesquisa-de-palavras-chave)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -130,6 +131,15 @@ Não cite números de mercado nem estatísticas. Se precisar de um dado para res
 **Na TRIWI:** [Skill: planejar conteúdos para 90 dias](https://triwi.com.br/skills/planejar-conteudos-para-90-dias/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=pesquisa-de-palavras-chave), skill da TRIWI para instalar no Claude ou no ChatGPT, com a versão completa desta tarefa.
 
 <sub>Código do prompt: KW-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para análise de concorrência na SERP do Google](prompts-para-analise-de-concorrencia-na-serp.md) | Conferir na página de resultados a intenção das buscas prioritárias |
+| [Prompts para briefing de conteúdo de SEO no ChatGPT, Claude e Gemini](prompts-para-briefing-de-conteudo-seo.md) | Transformar cada cluster numa página planejada |
 
 ## O que a TRIWI tem sobre pesquisa de palavras-chave?
 
