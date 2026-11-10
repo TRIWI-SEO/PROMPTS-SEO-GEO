@@ -343,3 +343,103 @@ Calcule e mostre em tabela:
 5. A variação de cada indicador em relação ao mês anterior.
 
 Mostre a fórmula de cada cálculo e os totais usados, para eu conferir. Depois, liste três observações que os números sustentam e três hipóteses que precisam de mais dados.","[MÊS]: o mês da coleta; [MARCA]: a marca medida; [TABELA DO MÊS]: as linhas registradas no mês, no formato do prompt de registro; [TABELA DO MÊS ANTERIOR]: as linhas do mês anterior, no mesmo formato","A IA erra conta, principalmente em tabela longa, e erra com convicção. Use a resposta para a leitura, mas refaça os cálculos numa planilha a partir da tabela original. E não compare meses em que o conjunto de perguntas, as IAs ou a forma de coleta mudaram: a variação vira efeito do método, não da marca.",Guia,Guia de Métricas de SEO e IA,https://triwi.com.br/guias/metricas-de-seo/,n/d,prompts-para-medir-presenca-da-marca-nas-ias.md,2026-11-09
+LI-01,Links internos,Prompt para planejar os links internos de uma página nova,"Decidir quais páginas do site devem apontar para um conteúdo novo, com que texto âncora, e para quais páginas ele deve apontar.","Vou publicar uma página nova no site [SITE] e preciso planejar os links internos dela.
+
+Página nova:
+- Endereço: [URL NOVA]
+- Assunto e busca principal: [ASSUNTO DA PÁGINA NOVA]
+
+Páginas que já existem no site (URL, título e busca principal de cada uma):
+[PÁGINAS DO SITE]
+
+Tarefa:
+1. Liste as páginas existentes que deveriam linkar para a página nova, com o motivo, o trecho onde o link entra e o texto âncora sugerido.
+2. Liste as páginas existentes para as quais a página nova deveria linkar, com o mesmo detalhe.
+3. Indique qual página funciona como página central do tema (a que reúne o assunto) e se a página nova deve ficar abaixo dela.
+
+Regras:
+1. Use só URLs da lista. Não invente endereços.
+2. O texto âncora descreve o destino, é conciso e não repete a mesma palavra-chave exata em todos os links.
+3. Nada de ""clique aqui"" ou ""leia mais"".
+4. Só sugira link onde ele ajuda quem está lendo aquele trecho.","[SITE]: o domínio do site; [URL NOVA]: o endereço da página nova; [ASSUNTO DA PÁGINA NOVA]: o tema e a busca principal da página nova; [PÁGINAS DO SITE]: uma linha por página existente, com URL, título e busca principal","A IA inventa URLs que parecem existir e sugere links entre páginas sem relação só porque dividem uma palavra. Ela também tende a repetir a mesma âncora com a palavra-chave exata, o que o Google desaconselha. Confira que cada URL sugerida abre e leia cada link no trecho em que ele entra antes de publicar.",Ferramenta,Planejador de arquitetura SEO,https://triwi.com.br/ferramentas/planejador-de-arquitetura-seo/,https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=pt-br,prompts-para-links-internos-seo.md,2026-11-09
+LI-02,Links internos,Prompt para revisar os textos âncora de uma página,"Encontrar âncoras genéricas, enganosas ou forçadas numa página e propor textos que descrevem o destino de cada link.","Revise os links internos da página abaixo, do site [SITE].
+
+Conteúdo da página, com os links (texto âncora e URL de destino):
+[CONTEÚDO COM LINKS]
+
+Título de cada página de destino:
+[TÍTULOS DOS DESTINOS]
+
+Para cada link, entregue numa tabela: texto âncora atual; URL de destino; problema (genérico, não descreve o destino, palavra-chave forçada, link repetido, nenhum); texto âncora sugerido.
+
+Depois, aponte:
+1. Trechos que falam de um assunto que tem página no site e estão sem link.
+2. Links que podem sair porque não ajudam o leitor naquele ponto.
+
+Use só os destinos da lista. Não sugira links para páginas que não estão nela.","[SITE]: o domínio do site; [CONTEÚDO COM LINKS]: o texto da página com os links visíveis, ou o HTML; [TÍTULOS DOS DESTINOS]: URL e título de cada página que recebe link","Sem o título das páginas de destino, a IA deduz do que cada uma trata pela URL e sugere âncoras que prometem outra coisa. Ela também troca âncoras naturais por palavra-chave exata, o que soa forçado para o leitor. O teste é o do Google: lido sozinho, o texto âncora tem de dizer do que trata a página de destino.",Ferramenta,Analisador de links internos,https://triwi.com.br/ferramentas/analisador-de-links-internos/,https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=pt-br,prompts-para-links-internos-seo.md,2026-11-09
+LI-03,Links internos,Prompt para encontrar páginas órfãs e páginas com poucos links,Cruzar a exportação do rastreador com a lista de páginas que importam e achar as que não recebem link interno nenhum ou recebem poucos.,"Abaixo estão dois arquivos do site [SITE]:
+
+1. Exportação do rastreador [FERRAMENTA], com cada URL encontrada e a quantidade de links internos que ela recebe:
+[EXPORTAÇÃO DO RASTREADOR]
+
+2. Lista de URLs que deveriam estar no ar e ser encontradas, vinda do sitemap ou do Search Console:
+[LISTA DE URLS IMPORTANTES]
+
+Tarefa:
+1. Liste as páginas órfãs: estão na lista 2 e não aparecem na exportação do rastreador.
+2. Liste as páginas da lista 2 que recebem poucos links internos, da que recebe menos para a que recebe mais.
+3. Para cada página das duas listas, sugira de duas a três páginas do site que poderiam linkar para ela, usando só URLs da exportação.
+4. Separe as páginas que talvez devam sair do site em vez de receber links (duplicadas, desatualizadas, sem função), com o motivo.
+
+Use só os dados dos dois arquivos. No fim, informe quantas URLs recebeu em cada arquivo e quantas classificou.","[SITE]: o domínio do site; [FERRAMENTA]: o rastreador usado, como Screaming Frog; [EXPORTAÇÃO DO RASTREADOR]: URL e número de links internos recebidos por página; [LISTA DE URLS IMPORTANTES]: as URLs do sitemap ou do relatório de páginas do Search Console","Página órfã não aparece no rastreador, justamente porque nenhum link leva a ela: só se encontra cruzando com o sitemap ou com o Search Console, e a IA não faz esse cruzamento sem os dois arquivos. Em listas longas, ela também perde URLs no caminho. Confira se os totais informados no fim batem com os arquivos enviados.",Base de Conhecimento,Arquitetura de site para SEO,https://github.com/TRIWI-SEO/SEO-IA/blob/main/seo-tecnico/arquitetura-de-site-para-seo.md,https://developers.google.com/search/docs/crawling-indexing/links-crawlable?hl=pt-br,prompts-para-links-internos-seo.md,2026-11-09
+REL-01,Relatório de SEO,Prompt para transformar dados de SEO num relatório para a diretoria,"Traduzir os números do Search Console e do analytics em resultado de negócio, numa página que a diretoria lê em poucos minutos.","Monte o relatório mensal de SEO de [EMPRESA] para [PÚBLICO DO RELATÓRIO], referente a [PERÍODO].
+
+Dados do Search Console (cliques, impressões, CTR e posição, com o período anterior):
+[DADOS DO SEARCH CONSOLE]
+
+Dados do analytics do tráfego orgânico (sessões, conversões e receita, com o período anterior):
+[DADOS DO ANALYTICS]
+
+O que foi feito no período: [AÇÕES DO PERÍODO]
+Metas de negócio do ano: [METAS]
+
+Estrutura:
+1. Resumo em três frases: o resultado de negócio do mês, a principal causa e a próxima decisão.
+2. Indicadores de negócio primeiro (conversões e receita do orgânico), depois os de visibilidade (cliques, impressões, posição).
+3. Busca de marca e busca sem marca separadas, quando os dados permitirem.
+4. O que explica a variação, separando o que os dados mostram do que é hipótese.
+5. Próximos passos, com o resultado esperado de cada um.
+
+Regras: use só os números que colei e mostre a conta de cada variação. Não use jargão sem explicar. Não atribua resultado a uma ação sem dado que sustente.","[EMPRESA]: nome da empresa; [PÚBLICO DO RELATÓRIO]: quem vai ler, como diretoria, comercial ou conselho; [PERÍODO]: o mês ou trimestre do relatório; [DADOS DO SEARCH CONSOLE]: a exportação do relatório de desempenho, com o período anterior; [DADOS DO ANALYTICS]: sessões, conversões e receita do canal orgânico, com o período anterior; [AÇÕES DO PERÍODO]: o que foi publicado, corrigido ou mudado no site; [METAS]: as metas de negócio que o SEO apoia","A IA trata clique do Search Console e sessão do analytics como se fossem a mesma coisa, e eles medem coisas diferentes. Ela também transforma coincidência em causa: se uma página foi publicada e o tráfego subiu, o relatório diz que uma causou a outra. Confira cada conta, mantenha as duas fontes separadas e exija o dado que sustenta cada explicação.",Guia,Guia de Métricas de SEO e IA,https://triwi.com.br/guias/metricas-de-seo/,n/d,prompts-para-relatorio-de-seo.md,2026-11-09
+REL-02,Relatório de SEO,Prompt para investigar uma queda de tráfego orgânico,"Organizar as causas possíveis de uma queda de tráfego, do mais provável ao menos provável, com o dado que confirma ou descarta cada uma.","O tráfego orgânico do site [SITE] caiu a partir de [DATA DA QUEDA].
+
+Dados do Search Console antes e depois da queda, por página e por consulta:
+[DADOS DO SEARCH CONSOLE]
+
+Mudanças feitas no site no período (publicações, migração, mudança de template, redirecionamentos): [MUDANÇAS NO SITE]
+Atualizações do Google registradas no período, conferidas no Painel de status da Pesquisa Google: [ATUALIZAÇÕES DO GOOGLE]
+Sazonalidade conhecida do negócio: [SAZONALIDADE]
+
+Tarefa:
+1. Descreva a queda: concentrada em poucas páginas ou espalhada, em busca de marca ou sem marca, em cliques com posição estável ou em posição.
+2. Liste as causas possíveis (problema técnico, mudança no site, atualização do Google, sazonalidade, mudança na página de resultados, perda para concorrente), cada uma com o dado que a confirma ou descarta.
+3. Ordene da mais provável para a menos provável, com justificativa.
+4. Diga o que verificar primeiro e onde.
+
+Não aponte uma causa como certa sem dado que sustente.",[SITE]: o domínio do site; [DATA DA QUEDA]: o dia ou a semana em que a queda começou; [DADOS DO SEARCH CONSOLE]: comparação de períodos por página e por consulta; [MUDANÇAS NO SITE]: o que mudou no site nas semanas anteriores; [ATUALIZAÇÕES DO GOOGLE]: as atualizações com data de início e fim no período; [SAZONALIDADE]: meses de alta e de baixa do negócio,"A IA culpa a atualização do Google por reflexo, e muitas quedas vêm de mudança no próprio site, de sazonalidade ou de um recurso novo na página de resultados. Ela também não sabe as datas reais das atualizações: confira no Painel de status da Pesquisa Google e cole no prompt. Uma queda que começou antes da atualização não foi causada por ela.",Atualizações,Atualizações do Google,https://triwi.com.br/atualizacoes/google/,https://status.search.google.com/,prompts-para-relatorio-de-seo.md,2026-11-09
+REL-03,Relatório de SEO,Prompt para calcular o ROI de SEO com os dados da empresa,"Calcular o retorno do investimento em SEO a partir de receita, margem e investimento informados, com a conta aberta e as premissas declaradas.","Calcule o retorno sobre o investimento (ROI) do SEO de [EMPRESA] em [PERÍODO], com estes dados:
+
+- Investimento em SEO no período (equipe, fornecedor, ferramentas, conteúdo): [INVESTIMENTO]
+- Conversões atribuídas ao orgânico: [CONVERSÕES]
+- Taxa de fechamento de lead em venda, se o site gera leads: [TAXA DE FECHAMENTO]
+- Valor médio de cada venda: [TICKET MÉDIO]
+- Margem de contribuição: [MARGEM]
+- Parcela do orgânico que vem de busca de marca: [PARTE DE MARCA]
+
+Tarefa:
+1. Calcule a receita atribuída ao orgânico e o lucro bruto que ela gera.
+2. Calcule o ROI: lucro atribuído menos investimento, dividido pelo investimento.
+3. Refaça a conta sem a busca de marca, que em boa parte viria de qualquer jeito.
+4. Mostre cada conta passo a passo e liste as premissas que mais mexem no resultado.
+
+Não preencha dado que eu não informei. Se faltar algum, pare e diga qual.","[EMPRESA]: nome da empresa; [PERÍODO]: o período do cálculo; [INVESTIMENTO]: quanto foi investido em SEO no período; [CONVERSÕES]: vendas ou leads do orgânico no período; [TAXA DE FECHAMENTO]: quantos leads viram venda, ou não se aplica; [TICKET MÉDIO]: valor médio de cada venda; [MARGEM]: margem de contribuição do negócio; [PARTE DE MARCA]: quanto do orgânico vem de buscas pelo nome da empresa","A IA erra conta e, quando falta um dado, completa com uma média de mercado sem avisar. Ela também calcula ROI sobre receita em vez de lucro, o que infla o resultado. Refaça a conta numa planilha, deixe as premissas escritas e separe busca de marca, que mede a força da marca mais do que o trabalho de SEO.",Ferramenta,Calculadora de ROI,https://triwi.com.br/ferramentas/calculadora-de-roi/,n/d,prompts-para-relatorio-de-seo.md,2026-11-09

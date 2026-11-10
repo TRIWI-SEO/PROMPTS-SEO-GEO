@@ -8,7 +8,7 @@ Este dicionário descreve a base [prompts.csv](prompts.csv), a versão em dados 
 
 | Arquivo | O que traz | Linhas |
 |:---|:---|:---|
-| [prompts.csv](prompts.csv) | Prompts para SEO e GEO, com código, tarefa, objetivo, texto completo, campos a preencher, alerta, recurso da TRIWI do mesmo tema e fonte oficial do alerta | 24 |
+| [prompts.csv](prompts.csv) | Prompts para SEO e GEO, com código, tarefa, objetivo, texto completo, campos a preencher, alerta, recurso da TRIWI do mesmo tema e fonte oficial do alerta | 30 |
 
 ## Como abrir o arquivo?
 
@@ -21,13 +21,13 @@ A coluna prompt guarda o texto com as quebras de linha originais, entre aspas, c
 | Coluna | Significado |
 |:---|:---|
 | id | Código do prompt, formado pela sigla da tarefa e um número, como KW-01; não muda depois de publicado |
-| tarefa | Tarefa a que o prompt pertence: Pesquisa de palavras-chave; Briefing de conteúdo; Auditoria de página; Conteúdo citado por IAs; Análise de concorrência na SERP; Perguntas frequentes (FAQ); Títulos e descrições; Medição de presença nas IAs |
+| tarefa | Tarefa a que o prompt pertence: Pesquisa de palavras-chave; Análise de concorrência na SERP; Briefing de conteúdo; Conteúdo citado por IAs; Perguntas frequentes (FAQ); Títulos e descrições; Links internos; Auditoria de página; Relatório de SEO; Medição de presença nas IAs |
 | titulo | Nome do prompt, igual ao título da seção na página da tarefa |
 | objetivo | O que o prompt resolve, em uma frase |
 | prompt | O texto completo, pronto para copiar, com os campos a preencher entre colchetes |
 | campos | Lista dos campos entre colchetes e do que colocar em cada um, separados por ponto e vírgula, no formato [CAMPO]: descrição |
 | alerta | O que a IA pode errar ao executar o prompt e como conferir |
-| recurso_triwi_tipo | Tipo do recurso da TRIWI do mesmo tema: Artigo; Base de Conhecimento; Checklist; Ferramenta; Guia; Skill |
+| recurso_triwi_tipo | Tipo do recurso da TRIWI do mesmo tema: Artigo; Atualizações; Base de Conhecimento; Checklist; Ferramenta; Guia; Skill |
 | recurso_triwi_nome | Nome do recurso da TRIWI |
 | recurso_triwi_url | Endereço do recurso da TRIWI, sem parâmetro de campanha |
 | fonte_oficial | Documentação oficial que sustenta o alerta, quando ele depende de uma regra de plataforma ou de lei; mais de uma fonte vem separada por ponto e vírgula; n/d quando o alerta descreve o comportamento da IA observado no uso |
