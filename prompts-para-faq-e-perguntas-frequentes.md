@@ -2,7 +2,7 @@
 
 **Uma boa FAQ responde as perguntas que o cliente faz de verdade, cada uma completa na primeira frase e apoiada só em informação da empresa. Os prompts desta página criam a FAQ de uma página, transformam o histórico do atendimento em perguntas e revisam uma FAQ já publicada.**
 
-São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 24 prompts em 8 tarefas, está no [README](README.md).
+São três prompts em português, cada um com objetivo, campos a preencher, o prompt pronto para copiar e o alerta do que a IA pode errar. Todos funcionam no ChatGPT, no Claude, no Gemini e em outras IAs de conversa. A biblioteca completa, com 30 prompts em 10 tarefas, está no [README](README.md).
 
 Desde 7 de maio de 2026, o Google não mostra mais o resultado enriquecido de perguntas frequentes, como registram as [Atualizações do Google](https://triwi.com.br/atualizacoes/google/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=faq) da TRIWI. A FAQ continua valendo pelo que responde ao leitor e às IAs.
 
@@ -13,6 +13,7 @@ Desde 7 de maio de 2026, o Google não mostra mais o resultado enriquecido de pe
 - [Prompt para criar as perguntas frequentes de uma página](#prompt-para-criar-as-perguntas-frequentes-de-uma-página)
 - [Prompt para transformar o histórico do atendimento em FAQ](#prompt-para-transformar-o-histórico-do-atendimento-em-faq)
 - [Prompt para revisar uma FAQ que já está publicada](#prompt-para-revisar-uma-faq-que-já-está-publicada)
+- [Qual o próximo passo?](#qual-o-próximo-passo)
 - [O que a TRIWI tem sobre perguntas frequentes (FAQ)?](#o-que-a-triwi-tem-sobre-perguntas-frequentes-faq)
 - [Perguntas frequentes](#perguntas-frequentes)
 
@@ -128,6 +129,14 @@ Não altere fatos. Onde achar que um fato está errado, aponte e peça confirma�
 **Na TRIWI:** [Gerador de dados estruturados](https://triwi.com.br/ferramentas/gerador-de-dados-estruturados/?utm_source=github&utm_medium=referral&utm_campaign=repo-prompts-seo-geo&utm_content=faq-e-perguntas-frequentes), ferramenta gratuita da TRIWI, no navegador e sem cadastro.
 
 <sub>Código do prompt: FAQ-03. Atualizado em 09/11/2026.</sub>
+
+## Qual o próximo passo?
+
+Cada tarefa desta biblioteca é uma etapa do trabalho de SEO e GEO. Depois desta, o caminho natural é:
+
+| Próxima tarefa | Para quê |
+|:---|:---|
+| [Prompts para title e meta description de SEO no ChatGPT, Claude e Gemini](prompts-para-titulos-e-meta-descriptions.md) | Escrever o title e a meta description da página |
 
 ## O que a TRIWI tem sobre perguntas frequentes (FAQ)?
 
